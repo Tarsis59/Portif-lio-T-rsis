@@ -1,26 +1,86 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+/* Variáveis globais */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #030014;
+  --foreground: #ebebeb;
+
+  --primary: #09bfed;
+  --primary-foreground: #000000;
+
+  --secondary: #7000ff;
+  --secondary-foreground: #ffffff;
+
+  --card: rgba(255, 255, 255, 0.03);
+  --card-foreground: rgba(255, 255, 255, 0.98);
+
+  --popover: rgba(15, 20, 30, 0.95);
+  --popover-foreground: #2eb9f9;
+
+  --border: rgba(255, 255, 255, 0.1);
+  --input: rgba(255, 255, 255, 0.05);
+  --ring: rgba(0, 229, 255, 0.15);
+
+  --muted: rgba(255, 255, 255, 0.15);
+  --muted-foreground: rgba(0, 0, 0, 0.64);
+
+  --accent: rgba(255, 255, 255, 0.15);
+  --accent-foreground: #f8f9fa;
+
+  --destructive: #ff4d4f;
+  --destructive-foreground: #ffffff;
+
+  --radius: 0.75rem;
+
+  scroll-behavior: smooth;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html,
+  body,
+  #__next {
+    height: 100%;
+  }
+
+  * {
+    border-color: var(--border);
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--background);
+    color: var(--foreground);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+      Roboto, "Helvetica Neue", Arial;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  @media (min-width: 768px) {
+    html {
+      cursor: none;
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .card {
+    background: var(--card);
+    color: var(--card-foreground);
+    border-radius: var(--radius);
+    padding: 1rem;
+  }
 }
