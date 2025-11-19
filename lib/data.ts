@@ -104,7 +104,7 @@ export const certificatesData: Certificate[] = [
     issuer: "Desenvolvedor.IO",
     date: "Concluído 19/08/2024",
     image: "/images/certs/DESENVOLVEDOR.IO.png",
-    link: "https://desenvolvedor.io/",
+    link: "/images/pasts/desenvolvedor.io.pdf",
   },
   {
     title: "Desenvolvimento Mobile",
@@ -118,7 +118,7 @@ export const certificatesData: Certificate[] = [
     issuer: "DIO",
     date: "Concluído 25/06/2024",
     image: "/images/certs/DIO.png",
-    link: "https://www.dio.me/",
+    link: "/images/pasts/dio.pdf",
   },
      {
     title: "MINICURSOS SINFORM",
@@ -128,31 +128,17 @@ export const certificatesData: Certificate[] = [
     link: "/images/certs/SINFORM 2023-2025.pdf",
   },
   {
-    title: "WEB Master Front-End",
-    issuer: "DANKI CODE",
-    date: "Concluído em Setembro de 2023",
-    image: "/images/certs/DANKI.png",
-    link: "https://cursos.dankicode.com/",
-  },
-  {
     title: "Desenvolvimento Web Full Stack Node",
     issuer: "Digital House",
     date: "Concluído em Maio de 2024",
     image: "/images/certs/DIGITAL.png",
-    link: "https://www.digitalhouse.com/br",
+    link: "/images/pasts/digital.pdf",
   },
   {
     title: "React JS",
     issuer: "Rocketseat",
     date: "Concluído 28/05/2021",
     image: "/images/certs/REACT.png",
-    link: "https://www.rocketseat.com.br/",
-  },
-  {
-    title: "Node JS",
-    issuer: "Rocketseat",
-    date: "Concluído 23/05/2022",
-    image: "/images/certs/NODE.png",
-    link: "https://www.rocketseat.com.br/",
+    link: "/images/pasts/react.pdf",
   },
 ];
