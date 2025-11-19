@@ -153,6 +153,6 @@ export const certificatesData: Certificate[] = [
     issuer: "Sinform",
     date: "Concluído 2023/2025",
     image: "/images/certs/SINFORM.png",
-    link: "file:///C:/Users/User/Downloads/SINFORM%202023-2025.pdf",
+    link: "/images/certs/SINFORM 2023-2025.pdf",
   },
 ];
