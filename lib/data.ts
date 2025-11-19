@@ -148,4 +148,11 @@ export const certificatesData: Certificate[] = [
     image: "/images/certs/NODE.png",
     link: "https://www.rocketseat.com.br/",
   },
+    {
+    title: "MINICURSOS SINFORM",
+    issuer: "Sinform",
+    date: "Concluído 2023/2025",
+    image: "/images/certs/SINFORM.png",
+    link: "file:///C:/Users/User/Downloads/SINFORM%202023-2025.pdf",
+  },
 ];
