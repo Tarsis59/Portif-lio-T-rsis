@@ -111,7 +111,7 @@ export const certificatesData: Certificate[] = [
     issuer: "CEPEDI",
     date: "Concluído em Dezembro de 2024",
     image: "/images/certs/CEPEDI.png",
-    link: "https://www.restic36.cepedi.org.br/",
+    link: "/images/pasts/CEPEDI.pdf",
   },
   {
     title: "Python AI Backend Developer",
@@ -119,6 +119,13 @@ export const certificatesData: Certificate[] = [
     date: "Concluído 25/06/2024",
     image: "/images/certs/DIO.png",
     link: "https://www.dio.me/",
+  },
+     {
+    title: "MINICURSOS SINFORM",
+    issuer: "Sinform",
+    date: "Concluído 2023/2025",
+    image: "/images/certs/SINFORM.png",
+    link: "/images/certs/SINFORM 2023-2025.pdf",
   },
   {
     title: "WEB Master Front-End",
@@ -147,12 +154,5 @@ export const certificatesData: Certificate[] = [
     date: "Concluído 23/05/2022",
     image: "/images/certs/NODE.png",
     link: "https://www.rocketseat.com.br/",
-  },
-    {
-    title: "MINICURSOS SINFORM",
-    issuer: "Sinform",
-    date: "Concluído 2023/2025",
-    image: "/images/certs/SINFORM.png",
-    link: "/images/certs/SINFORM 2023-2025.pdf",
   },
 ];
