@@ -374,16 +374,22 @@ export const Hero: React.FC = () => {
                 </Button>
               </a>
 
-              <a
-                href="/CV-Tarsis-Barreto.pdf"
-                download
-                className="group relative inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-primary/30 bg-primary/5 px-6 py-3 text-sm font-medium transition-all duration-300 hover:bg-primary/10 hover:shadow-lg sm:w-auto"
-                aria-label="Baixar currículo PDF"
-              >
-                <Download className="h-4 w-4 transition-transform duration-300 group-hover:scale-110" />
-                <span>Baixar meu CV</span>
-              </a>
-            </motion.div>
+<a
+  href="/images/curriculo-tarsis.pdf" 
+  
+  // O atributo download pode ter um nome formatado para o usuário
+  download="Tarsis-Barreto-Curriculo.pdf"
+  
+  // Abrir em nova aba é uma boa prática para links de download
+  target="_blank" 
+  
+  className="group relative inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-primary/30 bg-primary/5 px-6 py-3 text-sm font-medium transition-all duration-300 hover:bg-primary/10 hover:shadow-lg sm:w-auto"
+  aria-label="Baixar currículo PDF"
+>
+  <Download className="h-4 w-4 transition-transform duration-300 group-hover:scale-110" />
+  <span>Baixar meu CV</span>
+</a>
+</motion.div>
 
             {/* Social Links */}
             <motion.div
