@@ -100,11 +100,11 @@ export type Certificate = {
 /** Dados dos certificados */
 export const certificatesData: Certificate[] = [
   {
-    title: "Full Stack Developer",
-    issuer: "Desenvolvedor.IO",
-    date: "Concluído 19/08/2024",
-    image: "/images/certs/DESENVOLVEDOR.IO.png",
-    link: "/images/pasts/desenvolvedor.io.pdf",
+    title: "Projeto de Extensão BAH.IA",
+    issuer: "BAH.IA",
+    date: "Concluído 13/12/2024",
+    image: "/images/certs/BAH.IA.png",
+    link: "/images/pasts/BAH.IA.pdf",
   },
   {
     title: "Desenvolvimento Mobile",
@@ -126,6 +126,13 @@ export const certificatesData: Certificate[] = [
     date: "Concluído 2023/2025",
     image: "/images/certs/SINFORM.png",
     link: "/images/certs/SINFORM 2023-2025.pdf",
+  },
+    {
+    title: "Full Stack Developer",
+    issuer: "Desenvolvedor.IO",
+    date: "Concluído 19/08/2024",
+    image: "/images/certs/DESENVOLVEDOR.IO.png",
+    link: "/images/pasts/desenvolvedor.io.pdf",
   },
   {
     title: "Desenvolvimento Web Full Stack Node",
