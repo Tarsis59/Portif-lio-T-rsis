@@ -114,11 +114,11 @@ export const certificatesData: Certificate[] = [
     link: "/images/pasts/CEPEDI.pdf",
   },
   {
-    title: "Python AI Backend Developer",
-    issuer: "DIO",
-    date: "Concluído 25/06/2024",
-    image: "/images/certs/DIO.png",
-    link: "/images/pasts/dio.pdf",
+    title: "Suporte Profissional de MacBook",
+    issuer: "APPLE",
+    date: "Concluído 24/02/2021",
+    image: "/images/certs/APPLE.png",
+    link: "/images/pasts/APPLE.pdf",
   },
      {
     title: "MINICURSOS SINFORM",
@@ -126,6 +126,13 @@ export const certificatesData: Certificate[] = [
     date: "Concluído 2023/2025",
     image: "/images/certs/SINFORM.png",
     link: "/images/certs/SINFORM 2023-2025.pdf",
+  },
+    {
+    title: "Python AI Backend Developer",
+    issuer: "DIO",
+    date: "Concluído 25/06/2024",
+    image: "/images/certs/DIO.png",
+    link: "/images/pasts/dio.pdf",
   },
     {
     title: "Full Stack Developer",
