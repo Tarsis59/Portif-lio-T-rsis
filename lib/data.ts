@@ -72,6 +72,26 @@ export const projectData: Project[] = [
       },
     ],
   },
+   {
+    title: "BARREIRINHAS",
+    description:
+      "Centro de Comando ERP & E-Commerce Headless",
+    tags: ["React", "Next.js", "Firebase", "Tailwind", "Framer Motion"],
+
+    imageUrl: "/images/BARREIRINHAS.png",
+    links: [
+      {
+        icon: Github,
+        label: "Código",
+        href: "https://github.com/Tarsis59/barreirinhas-sistema",
+      },
+      {
+        icon: ExternalLink,
+        label: "Demo",
+        href: "https://barreirinhas-sistema.vercel.app/",
+      },
+    ],
+  },
   {
     title: "ProjectHelix",
     description:
