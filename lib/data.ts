@@ -126,6 +126,13 @@ export const certificatesData: Certificate[] = [
     image: "/images/certs/BAH.IA.png",
     link: "/images/pasts/BAH.IA.pdf",
   },
+   {
+    title: "Engenheiro de Dados e DevOps",
+    issuer: "DataTech Academy",
+    date: "Concluído 23/09/2025",
+    image: "/images/certs/DEVOPS.png",
+    link: "/images/pasts/DEVOPS.pdf",
+  },
   {
     title: "Desenvolvimento Mobile",
     issuer: "CEPEDI",
@@ -133,12 +140,12 @@ export const certificatesData: Certificate[] = [
     image: "/images/certs/CEPEDI.png",
     link: "/images/pasts/CEPEDI.pdf",
   },
-  {
-    title: "Suporte Profissional de MacBook",
-    issuer: "APPLE",
-    date: "Concluído 24/02/2021",
-    image: "/images/certs/APPLE.png",
-    link: "/images/pasts/APPLE.pdf",
+   {
+    title: "Desenvolvimento Backend C#/.NET",
+    issuer: "DEV ACADEMY",
+    date: "Concluído 19/02/2025",
+    image: "/images/certs/BACKEND.png",
+    link: "/images/pasts/BACKEND.pdf",
   },
      {
     title: "MINICURSOS SINFORM",
@@ -146,6 +153,13 @@ export const certificatesData: Certificate[] = [
     date: "Concluído 2023/2025",
     image: "/images/certs/SINFORM.png",
     link: "/images/certs/SINFORM 2023-2025.pdf",
+  },
+   {
+    title: "Suporte Profissional de MacBook",
+    issuer: "APPLE",
+    date: "Concluído 24/02/2021",
+    image: "/images/certs/APPLE.png",
+    link: "/images/pasts/APPLE.pdf",
   },
     {
     title: "Python AI Backend Developer",

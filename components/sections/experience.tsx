@@ -22,6 +22,14 @@ const experienceData = [
       "Pesquisa e implementação de modelos de Inteligência Artificial. Desenvolvimento de APIs com .NET e Python para consumo de dados e integração de sistemas.",
   },
   {
+    title: "Engenheiro de Software",
+    company: "CroSoften",
+    companyUrl: "https://crosoften.com/",
+    date: "Maio 2025 - Presente",
+    description:
+      "Atuação no desenvolvimento de aplicações Android (Kotlin) e Web (Angular), implementando funcionalidades end-to-end com foco em arquitetura limpa, performance e boa experiência do usuário. Integrei APIs REST/GraphQL, gerenciei persistência local e comunicação assíncrona, além de estruturar testes automatizados (unitários, integração e E2E) integrados à pipeline CI/CD. Também implementei monitoramento, análise de qualidade de código e boas práticas de engenharia para garantir estabilidade e reduzir falhas em produção.",
+  },
+   {
     title: "Desenvolvedor Web/Mobile e Pesquisador",
     company: "Universidade Estadual de Santa Cruz (UESC)",
     companyUrl: "https://www.uesc.br/",

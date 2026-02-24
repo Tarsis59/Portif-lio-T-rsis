@@ -15,9 +15,9 @@ import { TextGenerateEffect } from "../ui/text-generate-effect";
 
 /* Texto */
 const nome = "Társis Barreto";
-const cargo = "Desenvolvedor Full-Stack";
+const cargo = "Software Developer";
 const bio =
-  "Especialista em React, .NET e Node.js, focado em criar interfaces modernas, responsivas e de alta performance.";
+  "Especialista em React, .NET com conhecimento e habilidades no Mobile e Web com Node.js, C#, Angular, Python, Kotlin e Java. Focado em criar interfaces modernas, responsivas de qualidade e de alta performance.";
 
 const FALLBACK_SVG = `data:image/svg+xml;utf8,${encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' width='800' height='800' viewBox='0 0 800 800'>
   <defs>
