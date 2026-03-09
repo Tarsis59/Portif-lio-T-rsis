@@ -120,11 +120,11 @@ export type Certificate = {
 /** Dados dos certificados */
 export const certificatesData: Certificate[] = [
   {
-    title: "Projeto de Extensão BAH.IA",
-    issuer: "BAH.IA",
-    date: "Concluído 13/12/2024",
-    image: "/images/certs/BAH.IA.png",
-    link: "/images/pasts/BAH.IA.pdf",
+    title: "Unity 3D e Desenvolvimento de AR",
+    issuer: "PROAR Academy",
+    date: "Concluído 23/09/2025",
+    image: "/images/certs/UNITY.png",
+    link: "/images/pasts/UNITY.pdf",
   },
    {
     title: "Engenheiro de Dados e DevOps",
@@ -139,6 +139,13 @@ export const certificatesData: Certificate[] = [
     date: "Concluído em Dezembro de 2024",
     image: "/images/certs/CEPEDI.png",
     link: "/images/pasts/CEPEDI.pdf",
+  },
+    {
+    title: "Projeto de Extensão BAH.IA",
+    issuer: "BAH.IA",
+    date: "Concluído 13/12/2024",
+    image: "/images/certs/BAH.IA.png",
+    link: "/images/pasts/BAH.IA.pdf",
   },
    {
     title: "Desenvolvimento Backend C#/.NET",

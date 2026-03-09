@@ -441,7 +441,7 @@ const items = [
   {
     title: "Arquitetura Full Stack",
     description:
-      "Domínio completo do desenvolvimento web moderno, desde interfaces responsivas até APIs escaláveis e deploy em produção.",
+      "Domínio completo do desenvolvimento Web e Mobile moderno, desde interfaces responsivas até APIs escaláveis e deploy em produção.",
     header: (
       <Skeleton hoverEffect>
         <TechIconsGrid>
@@ -472,7 +472,7 @@ const items = [
   {
     title: "Frontend Excellence",
     description:
-      "Interfaces modernas e responsivas com React, TypeScript e as melhores práticas de UX/UI. Performance otimizada e acessibilidade.",
+      "Interfaces modernas e responsivas com React, Angular, TypeScript e as melhores práticas de UX/UI. Performance otimizada e acessibilidade.",
     header: (
       <Skeleton hoverEffect>
         <TechIconsGrid>
@@ -500,7 +500,7 @@ const items = [
   {
     title: "Backend Powerhouse",
     description:
-      "APIs RESTful e GraphQL escaláveis com Node.js, .NET e arquiteturas modernas. Foco em performance, segurança e manutenibilidade.",
+      "APIs RESTful e GraphQL escaláveis com Node.js, C#/.NET e arquiteturas modernas. Foco em performance, segurança e manutenibilidade.",
     header: (
       <Skeleton hoverEffect>
         <TechIconsGrid>
@@ -523,7 +523,7 @@ const items = [
   {
     title: "Mobile Development",
     description:
-      "Aplicações mobile nativas com React Native. Experiências fluidas e performáticas para iOS e Android.",
+      "Aplicações mobile nativas com React Native, Kotlin, Unity. Experiências fluidas e performáticas para iOS e Android.",
     header: (
       <Skeleton hoverEffect>
         <TechIconsGrid>

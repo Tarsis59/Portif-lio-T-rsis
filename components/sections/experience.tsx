@@ -6,18 +6,18 @@ import { SectionHeading } from "../ui/section-heading";
 
 const experienceData = [
   {
-    title: "Desenvolvedor Mobile e Web",
+    title: "Desenvolvedor de Software",
     company: "CEPEDI",
     companyUrl: "https://www.cepedi.org.br/",
-    date: "Junho 2024 - Dezembro 2024",
+    date: "Junho 2021 - Dezembro 2024",
     description:
-      "Atuação no desenvolvimento e manutenção de aplicações web e mobile, utilizando React, React Native e Node.js para entregar soluções de alta performance.",
+      "Atuação com C# no backend, mas voltado para dar suporte e performance aos aplicativos Mobile e Unity. Responsável por arquitetar APIs RESTful de baixa latência especificamente desenhadas para alimentar os recursos de Realidade Aumentada. Como a renderização de AR já exige muito do celular, eu tirei todo o processamento pesado do aplicativo e joguei para o backend usando mensageria com RabbitMQ e Hangfire. Também trabalhei lado a lado com a equipe Unity para otimizar os payloads da API, o que reduziu drasticamente o consumo de internet e o tempo de carregamento das cenas 3D. Além disso, eu implementei toda a esteira de testes automatizados e CI/CD. Isso garantiu que nenhuma atualização de API quebrasse os contratos do Unity, tornando nossos lançamentos de novas versões muito mais seguros e estáveis nas lojas.",
   },
   {
     title: "Desenvolvedor e Pesquisador em IA",
     company: "Projeto BAH.IA",
     companyUrl: "#",
-    date: "Janeiro 2024 - Dezembro 2024",
+    date: "Janeiro 2024 - Dezembro 2025",
     description:
       "Pesquisa e implementação de modelos de Inteligência Artificial. Desenvolvimento de APIs com .NET e Python para consumo de dados e integração de sistemas.",
   },
@@ -25,9 +25,9 @@ const experienceData = [
     title: "Engenheiro de Software",
     company: "CroSoften",
     companyUrl: "https://crosoften.com/",
-    date: "Maio 2025 - Presente",
+    date: "Janeiro 2025 - Presente",
     description:
-      "Atuação no desenvolvimento de aplicações Android (Kotlin) e Web (Angular), implementando funcionalidades end-to-end com foco em arquitetura limpa, performance e boa experiência do usuário. Integrei APIs REST/GraphQL, gerenciei persistência local e comunicação assíncrona, além de estruturar testes automatizados (unitários, integração e E2E) integrados à pipeline CI/CD. Também implementei monitoramento, análise de qualidade de código e boas práticas de engenharia para garantir estabilidade e reduzir falhas em produção.",
+      "Construí pipelines de validação de ponta a ponta que espelhavam exatamente o que o usuário fazia dentro do Unity. Eu criei testes de carga automatizados para garantir que o backend não fosse um gargalo quando o app de AR estivesse em uso intenso. Além disso, eu fiz um trabalho forte de otimização de banco de dados (SQL Tuning). Fazendo com que os dados chegassem o mais rápido possível ao celular, reduzindo o tempo de carregamento das cenas no Unity. Para fechar, toda vez que tínhamos um bug no app, eu transformava a correção em um teste automatizado na nossa CI. Isso garantiu que os nossos lançamentos nas lojas fossem extremamente seguros e sem regressões.",
   },
    {
     title: "Desenvolvedor Web/Mobile e Pesquisador",
@@ -35,7 +35,7 @@ const experienceData = [
     companyUrl: "https://www.uesc.br/",
     date: "Março 2022 - Presente",
     description:
-      "Participação em projetos de pesquisa e desenvolvimento de software acadêmico, aplicando arquiteturas limpas e metodologias ágeis.",
+      "Participação em projetos de pesquisa e desenvolvimento de software e projetos acadêmicos, aplicando arquiteturas limpas e metodologias ágeis.",
   },
 ];
 
