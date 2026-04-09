@@ -15,9 +15,9 @@ import { TextGenerateEffect } from "../ui/text-generate-effect";
 
 /* Texto */
 const nome = "Társis Barreto";
-const cargo = "Engenheiro de Software | Desenvolvedor Unity & AR";
+const cargo = "Engenheiro de Software";
 const bio =
-  "Desenvolvedor Unity 3D & AR | C# | Especialista em Realidade Aumentada (Vuforia), Mobile (iOS/Android) e Integração de APIs (.NET) | Focado em Performance e Experiências Imersivas.";
+  "Desenvolvedor Web com foco em interfaces modernas, integração com APIs REST, performance, organização técnica e melhoria contínua de aplicações.";
 
 const FALLBACK_SVG = `data:image/svg+xml;utf8,${encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' width='800' height='800' viewBox='0 0 800 800'>
   <defs>
@@ -193,7 +193,7 @@ const BadgeReact = () => (
       <div className="absolute inset-0 animate-ping rounded-full bg-[#61DAFB] opacity-20" />
     </div>
     <span className="bg-gradient-to-r from-[#61DAFB] to-[#21a0c4] bg-clip-text text-transparent font-semibold">
-      C#
+      React
     </span>
   </Badge>
 );

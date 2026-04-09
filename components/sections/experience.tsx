@@ -9,25 +9,25 @@ const experienceData = [
     title: "Desenvolvedor de Software",
     company: "CEPEDI",
     companyUrl: "https://www.cepedi.org.br/",
-    date: "Junho 2021 - Dezembro 2024",
+    date: "Junho 2023 - Dezembro 2024",
     description:
-      "Atuação com C# no backend, mas voltado para dar suporte e performance aos aplicativos Mobile e Unity. Responsável por arquitetar APIs RESTful de baixa latência especificamente desenhadas para alimentar os recursos de Realidade Aumentada. Como a renderização de AR já exige muito do celular, eu tirei todo o processamento pesado do aplicativo e joguei para o backend usando mensageria com RabbitMQ e Hangfire. Também trabalhei lado a lado com a equipe Unity para otimizar os payloads da API, o que reduziu drasticamente o consumo de internet e o tempo de carregamento das cenas 3D. Além disso, eu implementei toda a esteira de testes automatizados e CI/CD. Isso garantiu que nenhuma atualização de API quebrasse os contratos do Unity, tornando nossos lançamentos de novas versões muito mais seguros e estáveis nas lojas.",
+      "Atuei no desenvolvimento e manutenção de aplicações web, com foco em interfaces modernas, integrações e estabilidade das soluções. Trabalhei com React, Next.js, JavaScript e APIs REST, apoiando a evolução de páginas, componentes e fluxos de usuário. Participei da correção de bugs, refatoração de código e melhoria de performance em sistemas já em produção. Colaborei com times técnicos e de produto para entender requisitos, ajustar funcionalidades e manter entregas consistentes. Apoiei a organização técnica do código, garantindo estruturas mais claras, reutilizáveis e de fácil manutenção. Contribuí em rotinas de versionamento, revisão e acompanhamento de mudanças, com foco em qualidade e segurança das entregas.",
   },
   {
     title: "Desenvolvedor e Pesquisador em IA",
     company: "Projeto BAH.IA",
     companyUrl: "#",
-    date: "Janeiro 2024 - Dezembro 2025",
+    date: "Janeiro 2023 - Dezembro 2024",
     description:
-      "Pesquisa e implementação de modelos de Inteligência Artificial. Desenvolvimento de APIs com .NET e Python para consumo de dados e integração de sistemas.",
+      "Pesquisa e implementação de modelos de Inteligência Artificial, com desenvolvimento de APIs em .NET e Python para consumo de dados e integração entre sistemas. Atuação voltada à construção de soluções técnicas para processamento, integração e automação de fluxos.",
   },
   {
     title: "Engenheiro de Software",
     company: "CroSoften",
     companyUrl: "https://crosoften.com/",
-    date: "Janeiro 2025 - Presente",
+    date: "Janeiro 2025",
     description:
-      "Construí pipelines de validação de ponta a ponta que espelhavam exatamente o que o usuário fazia dentro do Unity. Eu criei testes de carga automatizados para garantir que o backend não fosse um gargalo quando o app de AR estivesse em uso intenso. Além disso, eu fiz um trabalho forte de otimização de banco de dados (SQL Tuning). Fazendo com que os dados chegassem o mais rápido possível ao celular, reduzindo o tempo de carregamento das cenas no Unity. Para fechar, toda vez que tínhamos um bug no app, eu transformava a correção em um teste automatizado na nossa CI. Isso garantiu que os nossos lançamentos nas lojas fossem extremamente seguros e sem regressões.",
+      "Atuação em projetos com forte integração entre front-end, backend e rotinas de suporte a sistemas web. Desenvolvimento e manutenção de funcionalidades com foco em estabilidade, performance e experiência do usuário. Apoio na integração com APIs e serviços externos, incluindo fluxos automatizados e validações técnicas. Participação em melhorias contínuas de aplicações, com atenção à manutenção preventiva, organização de código e confiabilidade do sistema. Colaboração direta com a equipe na análise de problemas técnicos, correções e evolução de componentes web. Desenvolvimento de interfaces responsivas com foco em usabilidade e clareza visual Integrações entre front-end e APIs para consumo e envio de dados. Refatoração de código para manter aplicações mais leves, organizadas e escaláveis. Apoio em melhorias de performance, carregamento e experiência do usuário. Participação em fluxos de manutenção contínua e correção de problemas técnicos Integração com ferramentas digitais e apoio à evolução de aplicações web em produção.",
   },
    {
     title: "Desenvolvedor Web/Mobile e Pesquisador",
@@ -35,7 +35,7 @@ const experienceData = [
     companyUrl: "https://www.uesc.br/",
     date: "Março 2022 - Presente",
     description:
-      "Participação em projetos de pesquisa e desenvolvimento de software e projetos acadêmicos, aplicando arquiteturas limpas e metodologias ágeis.",
+      "Participação em projetos de pesquisa e desenvolvimento de software, com atuação em aplicações web, mobile e projetos acadêmicos. Trabalho com aplicação de boas práticas de arquitetura, organização de código e metodologias ágeis, apoiando a construção de soluções estáveis, escaláveis e bem estruturadas.",
   },
 ];
 

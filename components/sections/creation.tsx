@@ -12,7 +12,7 @@ import { SectionHeading } from "../ui/section-heading";
 
 const BadgeJavaScript: React.FC = () => (
   <span className="px-3 py-2 text-sm font-medium rounded-full bg-yellow-400/10 text-yellow-400 border border-yellow-400/20 hover:bg-yellow-400/20 transition-all duration-300">
-    .NET
+    Angular
   </span>
 );
 
@@ -63,17 +63,17 @@ export const Creation: React.FC = () => {
       <ul className="space-y-4 text-base text-white/90">
         <li className="flex items-center gap-4">
           <Zap className="h-6 w-6 text-blue-400" />
-          <span className="font-medium">Unity Developer 3D & AR</span>
+          <span className="font-medium">Desenvolvedor Web & Mobile</span>
         </li>
 
         <li className="flex items-center gap-4">
           <Code className="h-6 w-6 text-green-400" />
-          <span className="font-medium">4 anos de experiência</span>
+          <span className="font-medium">3 anos de experiência</span>
         </li>
 
         <li className="flex items-center gap-4">
           <Shield className="h-6 w-6 text-purple-400" />
-          <span className="font-medium">Especialista C#/.Net</span>
+          <span className="font-medium">Especialista Full-Stack</span>
         </li>
 
         <li className="flex items-center gap-4">
