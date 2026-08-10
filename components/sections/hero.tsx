@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { ArrowDown, Download, Github, Linkedin, Mail } from "lucide-react";
 import Image from "next/image";
 import React, { Suspense, useEffect, useRef, useState } from "react";
+import * as THREE from "three";
 import { Button } from "../ui/button";
 import { Spotlight } from "../ui/spotlight";
 
@@ -42,10 +43,10 @@ const FALLBACK_SVG = `data:image/svg+xml;utf8,${encodeURIComponent(`<svg xmlns='
 
 /* ── 3D Scene ── */
 function SceneContent() {
-  const refA = useRef<any>(null);
-  const refB = useRef<any>(null);
-  const refC = useRef<any>(null);
-  const refParticles = useRef<any>(null);
+  const refA = useRef<THREE.Mesh>(null);
+  const refB = useRef<THREE.Mesh>(null);
+  const refC = useRef<THREE.Mesh>(null);
+  const refParticles = useRef<THREE.Group>(null);
 
   useFrame((state, delta) => {
     if (refA.current) {

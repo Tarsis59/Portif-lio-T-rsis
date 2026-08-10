@@ -1,15 +1,51 @@
 "use client";
 
 import { AnimatePresence, motion, useMotionValue, useSpring } from "framer-motion";
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useEffect, useState, useCallback, useMemo } from "react";
 
 interface ClientWrapperProps {
   children: React.ReactNode;
 }
 
+/* ── Preloader particles (pre-computed random values) ── */
+const PARTICLE_COUNT = 20;
+
+const PreloaderParticles = React.memo(() => {
+  const particles = useMemo(() =>
+    Array.from({ length: PARTICLE_COUNT }, (_, i) => ({
+      id: i,
+      initX: `${(i * 37 + 13) % 100}%`,
+      initY: `${(i * 53 + 7) % 100}%`,
+      animX: `${(i * 67 + 29) % 100}%`,
+      animY: `${(i * 41 + 19) % 100}%`,
+      duration: 2 + ((i * 0.7) % 3),
+      delay: (i * 0.35) % 1.5,
+    })),
+    [],
+  );
+
+  return (
+    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      {particles.map((p) => (
+        <motion.div
+          key={p.id}
+          className="absolute w-1 h-1 bg-primary rounded-full"
+          initial={{ x: p.initX, y: p.initY, opacity: 0, scale: 0 }}
+          animate={{ x: p.animX, y: p.animY, opacity: [0, 0.8, 0], scale: [0, 1, 0] }}
+          transition={{ duration: p.duration, repeat: Infinity, delay: p.delay, ease: "easeInOut" }}
+        />
+      ))}
+    </div>
+  );
+});
+
+PreloaderParticles.displayName = "PreloaderParticles";
+
 export const ClientWrapper: React.FC<ClientWrapperProps> = ({ children }) => {
   const [loading, setLoading] = useState(true);
-  const [isTouch, setIsTouch] = useState(false);
+  const [isTouch] = useState(() =>
+    typeof window !== "undefined" && ("ontouchstart" in window || navigator.maxTouchPoints > 0),
+  );
   const [preloaderPhase, setPreloaderPhase] = useState<"enter" | "exit">("enter");
 
   const mouseX = useMotionValue(-100);
@@ -36,11 +72,6 @@ export const ClientWrapper: React.FC<ClientWrapperProps> = ({ children }) => {
 
   /* ── Preloader ── */
   useEffect(() => {
-    const hasTouch =
-      typeof window !== "undefined" &&
-      ("ontouchstart" in window || navigator.maxTouchPoints > 0);
-    setIsTouch(hasTouch);
-
     if (typeof document !== "undefined") {
       document.documentElement.style.overflow = "hidden";
       document.body.style.overflow = "hidden";
@@ -123,33 +154,7 @@ export const ClientWrapper: React.FC<ClientWrapperProps> = ({ children }) => {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.6, ease: "easeInOut" }}
           >
-            {/* background particles */}
-            <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              {[...Array(20)].map((_, i) => (
-                <motion.div
-                  key={i}
-                  className="absolute w-1 h-1 bg-primary rounded-full"
-                  initial={{
-                    x: Math.random() * 100 + "%",
-                    y: Math.random() * 100 + "%",
-                    opacity: 0,
-                    scale: 0,
-                  }}
-                  animate={{
-                    x: Math.random() * 100 + "%",
-                    y: Math.random() * 100 + "%",
-                    opacity: [0, 0.8, 0],
-                    scale: [0, 1, 0],
-                  }}
-                  transition={{
-                    duration: 2 + Math.random() * 3,
-                    repeat: Infinity,
-                    delay: Math.random() * 1.5,
-                    ease: "easeInOut",
-                  }}
-                />
-              ))}
-            </div>
+            <PreloaderParticles />
 
             <motion.div
               className="flex flex-col items-center gap-6 px-6"

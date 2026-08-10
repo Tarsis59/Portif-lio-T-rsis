@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import {
   Brain,
   Smartphone,
@@ -45,7 +45,7 @@ const services = [
   },
 ];
 
-const cardVariants = {
+const cardVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: (delay: number) => ({
     opacity: 1,
@@ -75,7 +75,7 @@ export const Services: React.FC = () => {
       />
 
       <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {services.map((service, i) => {
+        {services.map((service) => {
           const Icon = service.icon;
           return (
             <motion.div
