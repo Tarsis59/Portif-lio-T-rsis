@@ -4,8 +4,7 @@ import { OrbitControls } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { motion } from "framer-motion";
 import { ArrowDown, Download, Github, Linkedin, Mail } from "lucide-react";
-import Image from "next/image";
-import React, { Suspense, useEffect, useRef, useState } from "react";
+import React, { Suspense, useRef } from "react";
 import * as THREE from "three";
 import { Button } from "../ui/button";
 import { Spotlight } from "../ui/spotlight";
@@ -14,32 +13,6 @@ const nome = "Társis Barreto";
 const cargo = "Full-Stack Developer & AI Engineer";
 const bio =
   "Sou um Desenvolvedor Full-Stack especializado na criação de aplicações modernas ponta a ponta, unindo a robustez do ecossistema .NET e Node.js à dinamicidade do React, Next.js e Angular. Nos últimos anos, tenho me destacado na Engenharia de IA, integrando LLMs (OpenAI API) e frameworks como LangChain em produtos SaaS e CRMs, orquestrando agentes inteligentes e aplicando Prompt Engineering para otimizar processos de negócios.";
-
-const FALLBACK_SVG = `data:image/svg+xml;utf8,${encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' width='800' height='800' viewBox='0 0 800 800'>
-  <defs>
-    <linearGradient id='bg' x1='0%' y1='0%' x2='100%' y2='100%'>
-      <stop offset='0%' stop-color='#000b14'/><stop offset='50%' stop-color='#001829'/><stop offset='100%' stop-color='#000510'/>
-    </linearGradient>
-    <radialGradient id='h1' cx='30%' cy='30%' r='70%'>
-      <stop offset='0%' stop-color='#09bfed' stop-opacity='0.25'/><stop offset='70%' stop-color='#09bfed' stop-opacity='0.1'/><stop offset='100%' stop-color='#09bfed' stop-opacity='0'/>
-    </radialGradient>
-    <radialGradient id='h2' cx='70%' cy='70%' r='60%'>
-      <stop offset='0%' stop-color='#7000ff' stop-opacity='0.2'/><stop offset='70%' stop-color='#7000ff' stop-opacity='0.1'/><stop offset='100%' stop-color='#7000ff' stop-opacity='0'/>
-    </radialGradient>
-    <filter id='blur'><feGaussianBlur in='SourceGraphic' stdDeviation='50'/></filter>
-    <linearGradient id='iconGrad' x1='0%' y1='0%' x2='100%' y2='100%'>
-      <stop offset='0%' stop-color='#09bfed'/><stop offset='100%' stop-color='#7000ff'/>
-    </linearGradient>
-  </defs>
-  <rect width='100%' height='100%' fill='url(#bg)'/>
-  <g filter='url(#blur)' opacity='0.8'>
-    <circle cx='180' cy='180' r='140' fill='url(#h1)'/><circle cx='620' cy='320' r='160' fill='url(#h2)'/><ellipse cx='400' cy='580' rx='120' ry='90' fill='rgba(9,191,237,0.08)'/>
-  </g>
-  <g transform='translate(400, 400)'>
-    <circle cx='0' cy='0' r='80' fill='url(#iconGrad)' opacity='0.08'/><circle cx='0' cy='0' r='60' fill='url(#iconGrad)' opacity='0.12'/>
-    <g fill='url(#iconGrad)' opacity='0.7'><circle cx='0' cy='-15' r='25'/><path d='M -40 20 Q 0 60 40 20 L -40 20 Z'/></g>
-  </g>
-</svg>`)}`;
 
 /* ── 3D Scene ── */
 function SceneContent() {
@@ -172,27 +145,6 @@ const BadgePython = () => (
 
 /* ── Hero ── */
 export const Hero: React.FC = () => {
-  const [imgSrc, setImgSrc] = useState(FALLBACK_SVG);
-  const [imageLoaded, setImageLoaded] = useState(false);
-  const [usingFallback, setUsingFallback] = useState(true);
-
-  useEffect(() => {
-    const checkImage = async () => {
-      try {
-        const response = await fetch("/images/foto-perfil.jpg");
-        if (response.ok) {
-          setImgSrc("/images/foto-perfil.jpg");
-          setUsingFallback(false);
-        } else {
-          setImageLoaded(true);
-        }
-      } catch {
-        setImageLoaded(true);
-      }
-    };
-    checkImage();
-  }, []);
-
   return (
     <section
       id="inicio"
@@ -358,62 +310,33 @@ export const Hero: React.FC = () => {
               <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-background/95 to-background/80 backdrop-blur-xl border border-white/10 shadow-2xl">
                 <div className="relative rounded-2xl p-6">
                   {/* 3D Canvas */}
-                  <div className="absolute inset-0 z-0 rounded-2xl overflow-hidden">
-                    <Canvas
-                      camera={{ position: [0, 0, 3.5], fov: 50 }}
-                      style={{ width: "100%", height: "100%" }}
-                      gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
-                    >
-                      <color attach="background" args={["#000000"]} />
-                      <ambientLight intensity={0.6} />
-                      <directionalLight intensity={0.8} position={[2, 4, 5]} />
-                      <pointLight intensity={0.5} position={[-3, -2, 2]} color="#09bfed" />
-                      <pointLight intensity={0.3} position={[3, 2, -1]} color="#7000ff" />
-                      <Suspense fallback={null}>
-                        <group position={[0, -0.08, 0]}>
-                          <SceneContent />
-                        </group>
-                        <OrbitControls
-                          enableZoom={false}
-                          enablePan={false}
-                          autoRotate
-                          autoRotateSpeed={2}
-                          maxPolarAngle={Math.PI / 2}
-                          minPolarAngle={Math.PI / 3}
-                        />
-                      </Suspense>
-                    </Canvas>
-                  </div>
-
-                  {/* Photo */}
-                  <div className="relative z-10 mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-2xl shadow-2xl">
-                    {usingFallback ? (
-                      <div
-                        className="absolute inset-0 flex items-center justify-center bg-cover bg-center"
-                        style={{ backgroundImage: `url(${FALLBACK_SVG})` }}
-                      />
-                    ) : (
-                      <Image
-                        src={imgSrc}
-                        alt="Foto de perfil de Társis Barreto"
-                        fill
-                        priority
-                        className={`object-cover transition-all duration-700 ${
-                          imageLoaded ? "opacity-100 scale-100" : "opacity-0 scale-105"
-                        }`}
-                        onLoad={() => setImageLoaded(true)}
-                        onError={() => { setImgSrc(FALLBACK_SVG); setUsingFallback(true); setImageLoaded(true); }}
-                        sizes="(max-width: 768px) 80vw, 40vw"
-                      />
-                    )}
-
-                    {!imageLoaded && !usingFallback && (
-                      <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-background to-slate-900">
-                        <div className="h-8 w-8 animate-spin rounded-full border-2 border-primary border-t-transparent" />
-                      </div>
-                    )}
-
-                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-primary/15 via-transparent to-transparent mix-blend-overlay pointer-events-none" />
+                  <div className="aspect-square w-full max-w-sm mx-auto relative z-10 rounded-2xl overflow-hidden">
+                    <div className="absolute inset-0 z-0 rounded-2xl overflow-hidden">
+                      <Canvas
+                        camera={{ position: [0, 0, 3.5], fov: 50 }}
+                        style={{ width: "100%", height: "100%" }}
+                        gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
+                      >
+                        <color attach="background" args={["#000000"]} />
+                        <ambientLight intensity={0.6} />
+                        <directionalLight intensity={0.8} position={[2, 4, 5]} />
+                        <pointLight intensity={0.5} position={[-3, -2, 2]} color="#09bfed" />
+                        <pointLight intensity={0.3} position={[3, 2, -1]} color="#7000ff" />
+                        <Suspense fallback={null}>
+                          <group position={[0, -0.08, 0]}>
+                            <SceneContent />
+                          </group>
+                          <OrbitControls
+                            enableZoom={false}
+                            enablePan={false}
+                            autoRotate
+                            autoRotateSpeed={2}
+                            maxPolarAngle={Math.PI / 2}
+                            minPolarAngle={Math.PI / 3}
+                          />
+                        </Suspense>
+                      </Canvas>
+                    </div>
                   </div>
 
                   {/* Tech Badges */}
