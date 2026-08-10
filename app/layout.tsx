@@ -3,19 +3,78 @@ import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Inter, Outfit } from "next/font/google";
+import localFont from "next/font/local";
 import React from "react";
 import { Toaster } from "sonner";
 import "./globals.css";
 
-const fontInter = Inter({
-  subsets: ["latin"],
+const fontInter = localFont({
+  src: [
+    {
+      path: "../node_modules/@fontsource/inter/files/inter-latin-300-normal.woff2",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../node_modules/@fontsource/inter/files/inter-latin-400-normal.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../node_modules/@fontsource/inter/files/inter-latin-500-normal.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../node_modules/@fontsource/inter/files/inter-latin-600-normal.woff2",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../node_modules/@fontsource/inter/files/inter-latin-700-normal.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../node_modules/@fontsource/inter/files/inter-latin-800-normal.woff2",
+      weight: "800",
+      style: "normal",
+    },
+  ],
   variable: "--font-inter",
+  display: "swap",
 });
 
-const fontOutfit = Outfit({
-  subsets: ["latin"],
+const fontOutfit = localFont({
+  src: [
+    {
+      path: "../node_modules/@fontsource/outfit/files/outfit-latin-300-normal.woff2",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../node_modules/@fontsource/outfit/files/outfit-latin-400-normal.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../node_modules/@fontsource/outfit/files/outfit-latin-600-normal.woff2",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../node_modules/@fontsource/outfit/files/outfit-latin-700-normal.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../node_modules/@fontsource/outfit/files/outfit-latin-800-normal.woff2",
+      weight: "800",
+      style: "normal",
+    },
+  ],
   variable: "--font-outfit",
+  display: "swap",
 });
 
 export const metadata: Metadata = {

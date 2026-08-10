@@ -4,7 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import { Github, Instagram, Linkedin, Mail, Phone, Send, Check, Loader2 } from "lucide-react";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import * as z from "zod";

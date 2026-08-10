@@ -34,7 +34,6 @@ import {
   SiReact,
   SiTailwindcss,
   SiTypescript,
-  SiVite,
 } from "react-icons/si";
 
 import { cn } from "@/lib/utils";
@@ -298,28 +297,6 @@ const BadgeGit = () => (
     pulseColor="#F05032"
   >
     Git & GitHub
-  </AnimatedBadge>
-);
-
-const BadgeVite = () => (
-  <AnimatedBadge
-    color="#646CFF"
-    delay={0.75}
-    icon={<SiVite className="h-4 w-4 text-[#646CFF]" />}
-    pulseColor="#646CFF"
-  >
-    Vite
-  </AnimatedBadge>
-);
-
-const BadgeFramer = () => (
-  <AnimatedBadge
-    color="#0055FF"
-    delay={0.8}
-    icon={<SiFramer className="h-4 w-4 text-[#0055FF]" />}
-    pulseColor="#0055FF"
-  >
-    Framer Motion
   </AnimatedBadge>
 );
 
