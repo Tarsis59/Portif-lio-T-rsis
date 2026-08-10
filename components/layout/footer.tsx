@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowUp, Code2, Github, Linkedin, Instagram, Heart } from "lucide-react";
+import { ArrowUp, Code2, Github, Linkedin, Instagram } from "lucide-react";
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -39,8 +39,8 @@ export const Footer: React.FC = () => {
 
           {/* Center — Copyright */}
           <div className="flex flex-col items-center gap-1">
-            <span className="text-sm text-foreground/40 flex items-center gap-1">
-              Feito com <Heart className="h-3 w-3 text-red-400 fill-red-400" /> por Társis Barreto
+            <span className="text-sm text-foreground/40">
+              Társis Barreto
             </span>
             <span className="text-xs text-foreground/30">
               &copy; {currentYear} Todos os direitos reservados.

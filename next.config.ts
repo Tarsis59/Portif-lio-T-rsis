@@ -6,10 +6,6 @@ const nextConfig: NextConfig = {
   images: {
     qualities: [75, 95],
   },
-
-  experimental: {
-    turbopackUseSystemTlsCerts: true,
-  },
 };
 
 export default nextConfig;
