@@ -79,10 +79,7 @@ const fontOutfit = localFont({
 
 export const metadata: Metadata = {
   title: "Társis Barreto",
-description: "Portfólio de Társis Barreto. Especialista em React, .NET, Node.js e Arquitetura Limpa. Explore meu laboratório 3D e projetos.",
-  icons: {
-    icon: "/icon.png",
-  },
+  description: "Portfólio de Társis Barreto. Especialista em React, .NET, Node.js e Arquitetura Limpa. Explore meu laboratório 3D e projetos.",
 };
 
 export default function RootLayout({

@@ -15,44 +15,6 @@ export type Project = {
 
 export const projectData: Project[] = [
   {
-    title: "WISEFLOW",
-    description:
-      "Plataforma SaaS com CRM inteligente integrando LLMs (OpenAI, LangChain) para automação de fluxos de negócio, agentes de IA e análise preditiva de dados de clientes.",
-    tags: ["Next.js", "TypeScript", "Python", "LangChain", "OpenAI", "PostgreSQL"],
-    imageUrl: "/images/WISEFLOW.png",
-    links: [
-      {
-        icon: Github,
-        label: "Código",
-        href: "#",
-      },
-      {
-        icon: ExternalLink,
-        label: "Demo",
-        href: "#",
-      },
-    ],
-  },
-  {
-    title: "NEURALANALYTICS",
-    description:
-      "API de processamento de dados com embeddings, RAG (Retrieval-Augmented Generation) e agentes autônomos. Orquestração de LLMs com FastAPI, Redis e PostgreSQL.",
-    tags: ["Python", "FastAPI", "LangChain", "Redis", "Docker", "PostgreSQL"],
-    imageUrl: "/images/NEURALANALYTICS.png",
-    links: [
-      {
-        icon: Github,
-        label: "Código",
-        href: "#",
-      },
-      {
-        icon: ExternalLink,
-        label: "Demo",
-        href: "#",
-      },
-    ],
-  },
-  {
     title: "ULTRAFLIX",
     description:
       "Plataforma de streaming completa (SPA) construída com Catalogação, favoritos, avaliações e comentários.",

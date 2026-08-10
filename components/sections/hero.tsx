@@ -179,9 +179,9 @@ export const Hero: React.FC = () => {
   useEffect(() => {
     const checkImage = async () => {
       try {
-        const response = await fetch("/images/foto-perfil.png");
+        const response = await fetch("/images/foto-perfil.jpg");
         if (response.ok) {
-          setImgSrc("/images/foto-perfil.png");
+          setImgSrc("/images/foto-perfil.jpg");
           setUsingFallback(false);
         } else {
           setImageLoaded(true);
