@@ -6,6 +6,10 @@ const nextConfig: NextConfig = {
   experimental: {
     turbopackUseSystemTlsCerts: true,
   },
-};
+
+  turbopack: {
+    root: ".",
+  },
+} as NextConfig;
 
 export default nextConfig;
