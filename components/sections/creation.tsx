@@ -60,35 +60,36 @@ export const Creation: React.FC = () => {
   const profileData = {
     title: "Társis Barreto",
     description: (
-      <ul className="space-y-4 text-base text-white/90">
-        <li className="flex items-center gap-4">
-          <Zap className="h-6 w-6 text-blue-400" />
-          <span className="font-medium">Desenvolvedor Web & Mobile</span>
+      <ul className="space-y-3 text-base text-white/90">
+        <li className="flex items-center gap-3">
+          <Zap className="h-5 w-5 text-blue-400 flex-shrink-0" />
+          <span className="font-medium">Full-Stack Developer & AI Engineer</span>
         </li>
-
-        <li className="flex items-center gap-4">
-          <Code className="h-6 w-6 text-green-400" />
-          <span className="font-medium">3 anos de experiência</span>
+        <li className="flex items-center gap-3">
+          <Cpu className="h-5 w-5 text-emerald-400 flex-shrink-0" />
+          <span className="font-medium">Especialista em LLMs, LangChain e OpenAI API</span>
         </li>
-
-        <li className="flex items-center gap-4">
-          <Shield className="h-6 w-6 text-purple-400" />
-          <span className="font-medium">Especialista Full-Stack</span>
+        <li className="flex items-center gap-3">
+          <Code className="h-5 w-5 text-green-400 flex-shrink-0" />
+          <span className="font-medium">4+ anos de experiência</span>
         </li>
-
-        <li className="flex items-center gap-4">
-          <Workflow className="h-6 w-6 text-cyan-400" />
-          <span className="font-medium">Arquiteturas Escaláveis</span>
+        <li className="flex items-center gap-3">
+          <Shield className="h-5 w-5 text-purple-400 flex-shrink-0" />
+          <span className="font-medium">Clean Architecture, DDD, CQRS, Microsserviços</span>
+        </li>
+        <li className="flex items-center gap-3">
+          <Workflow className="h-5 w-5 text-cyan-400 flex-shrink-0" />
+          <span className="font-medium">React, Next.js, Angular, .NET, Node.js, Python</span>
         </li>
       </ul>
     ),
     badges: (
-      <div className="flex flex-wrap gap-3">
-        <BadgeJavaScript />
+      <div className="flex flex-wrap gap-2">
         <BadgeTypeScript />
         <BadgeReact />
-        <BadgeNode />
         <BadgeNext />
+        <BadgeNode />
+        <BadgeJavaScript />
         <BadgeTailwind />
       </div>
     ),
@@ -213,7 +214,7 @@ export const Creation: React.FC = () => {
                 </div>
                 <div className="w-20 h-1.5 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full mx-auto mb-3" />
                 <p className="text-white/80 text-xl font-semibold">
-                  Software Developer
+                  Full-Stack Developer & AI Engineer
                 </p>
               </div>
 

@@ -439,19 +439,19 @@ const TechIconsGrid = ({ children }: { children: React.ReactNode }) => (
 
 const items = [
   {
-    title: "Arquitetura Full Stack",
+    title: "AI Engineering & LLMs",
     description:
-      "Domínio completo do desenvolvimento Web e Mobile moderno, desde interfaces responsivas até APIs escaláveis e deploy em produção.",
+      "Engenharia de IA com integração de LLMs (OpenAI API), LangChain, embeddings e agentes inteligentes em produtos SaaS e CRMs. Prompt Engineering para otimizar processos de negócios reais.",
     header: (
       <Skeleton hoverEffect>
         <TechIconsGrid>
-          <SiReact className="h-16 w-16 text-[#61DAFB] animate-pulse" />
+          <SiPython className="h-16 w-16 text-[#3776AB] animate-pulse" />
           <SiNodedotjs
             className="h-16 w-16 text-[#339933] animate-pulse"
             style={{ animationDelay: "0.5s" }}
           />
-          <SiNextdotjs
-            className="h-16 w-16 text-white animate-pulse"
+          <SiReact
+            className="h-16 w-16 text-[#61DAFB] animate-pulse"
             style={{ animationDelay: "1s" }}
           />
         </TechIconsGrid>
@@ -461,8 +461,9 @@ const items = [
     className: "md:col-span-2 md:row-span-1",
     badges: (
       <div className="flex flex-wrap gap-2 mt-4">
-        <BadgeJavaScript />
+        <BadgePython />
         <BadgeTypeScript />
+        <BadgeJavaScript />
         <BadgeReact />
         <BadgeNode />
         <BadgeNext />
@@ -472,13 +473,13 @@ const items = [
   {
     title: "Frontend Excellence",
     description:
-      "Interfaces modernas e responsivas com React, Angular, TypeScript e as melhores práticas de UX/UI. Performance otimizada e acessibilidade.",
+      "Interfaces modernas, responsivas e performáticas com React, Next.js, Angular e TypeScript. Foco em UX/UI, acessibilidade e otimização de performance.",
     header: (
       <Skeleton hoverEffect>
         <TechIconsGrid>
           <SiReact className="h-12 w-12 text-[#61DAFB]" />
+          <SiNextdotjs className="h-12 w-12 text-white" />
           <SiTypescript className="h-12 w-12 text-[#3178C6]" />
-          <SiVite className="h-12 w-12 text-[#646CFF]" />
           <SiTailwindcss className="h-12 w-12 text-[#06B6D4]" />
           <SiFramer className="h-12 w-12 text-[#0055FF]" />
         </TechIconsGrid>
@@ -488,25 +489,25 @@ const items = [
     className: "md:col-span-1",
     badges: (
       <div className="flex flex-wrap gap-2 mt-4">
+        <BadgeReact />
+        <BadgeNext />
+        <BadgeTypeScript />
         <BadgeHTML5 />
         <BadgeCSS3 />
-        <BadgeReact />
-        <BadgeVite />
         <BadgeTailwind />
-        <BadgeFramer />
       </div>
     ),
   },
   {
-    title: "Backend Powerhouse",
+    title: "Backend & APIs",
     description:
-      "APIs RESTful e GraphQL escaláveis com Node.js, C#/.NET e arquiteturas modernas. Foco em performance, segurança e manutenibilidade.",
+      "APIs RESTful e GraphQL escaláveis com C# (.NET), Node.js e Python (FastAPI). Clean Architecture, DDD, CQRS, Microsserviços e arquiteturas orientadas a eventos com Kafka e RabbitMQ.",
     header: (
       <Skeleton hoverEffect>
         <TechIconsGrid>
-          <SiNodedotjs className="h-12 w-12 text-[#339933]" />
-          <SiExpress className="h-12 w-12 text-white" />
           <SiDotnet className="h-12 w-12 text-[#512BD4]" />
+          <SiNodedotjs className="h-12 w-12 text-[#339933]" />
+          <SiPython className="h-12 w-12 text-[#3776AB]" />
         </TechIconsGrid>
       </Skeleton>
     ),
@@ -516,6 +517,7 @@ const items = [
       <div className="flex flex-wrap gap-2 mt-4">
         <BadgeNode />
         <BadgeExpress />
+        <BadgePython />
         <BadgeREST />
       </div>
     ),
@@ -585,14 +587,14 @@ const items = [
     ),
   },
   {
-    title: "Databases & APIs",
+    title: "Dados, Cache & Mensageria",
     description:
-      "Modelagem de dados relacional e NoSQL, APIs RESTful robustas, cache e otimização de performance em banco de dados.",
+      "Modelagem e otimização de bancos relacionais e NoSQL (PostgreSQL, MySQL, MongoDB). Cache com Redis. Arquiteturas orientadas a eventos com Apache Kafka e RabbitMQ para sistemas distribuídos.",
     header: (
       <Skeleton hoverEffect>
         <TechIconsGrid>
-          <SiMongodb className="h-12 w-12 text-[#47A248]" />
           <SiPostgresql className="h-12 w-12 text-blue-400" />
+          <SiMongodb className="h-12 w-12 text-[#47A248]" />
           <SiFirebase className="h-12 w-12 text-[#FFCA28]" />
           <Database className="h-12 w-12 text-secondary" />
         </TechIconsGrid>
@@ -605,6 +607,7 @@ const items = [
         <BadgeMongoDB />
         <BadgeFirebase />
         <BadgeREST />
+        <BadgeGit />
       </div>
     ),
   },

@@ -9,6 +9,7 @@ import { Button } from "../ui/button";
 const navItems = [
   { name: "Sobre", href: "#criacao" },
   { name: "Habilidades", href: "#sobre" },
+  { name: "Serviços", href: "#servicos" },
   { name: "Experiência", href: "#experiencia" },
   { name: "Projetos", href: "#projetos" },
   { name: "Certificados", href: "#certificados" },

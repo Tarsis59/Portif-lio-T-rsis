@@ -15,6 +15,44 @@ export type Project = {
 
 export const projectData: Project[] = [
   {
+    title: "WISEFLOW",
+    description:
+      "Plataforma SaaS com CRM inteligente integrando LLMs (OpenAI, LangChain) para automação de fluxos de negócio, agentes de IA e análise preditiva de dados de clientes.",
+    tags: ["Next.js", "TypeScript", "Python", "LangChain", "OpenAI", "PostgreSQL"],
+    imageUrl: "/images/WISEFLOW.png",
+    links: [
+      {
+        icon: Github,
+        label: "Código",
+        href: "#",
+      },
+      {
+        icon: ExternalLink,
+        label: "Demo",
+        href: "#",
+      },
+    ],
+  },
+  {
+    title: "NEURALANALYTICS",
+    description:
+      "API de processamento de dados com embeddings, RAG (Retrieval-Augmented Generation) e agentes autônomos. Orquestração de LLMs com FastAPI, Redis e PostgreSQL.",
+    tags: ["Python", "FastAPI", "LangChain", "Redis", "Docker", "PostgreSQL"],
+    imageUrl: "/images/NEURALANALYTICS.png",
+    links: [
+      {
+        icon: Github,
+        label: "Código",
+        href: "#",
+      },
+      {
+        icon: ExternalLink,
+        label: "Demo",
+        href: "#",
+      },
+    ],
+  },
+  {
     title: "ULTRAFLIX",
     description:
       "Plataforma de streaming completa (SPA) construída com Catalogação, favoritos, avaliações e comentários.",
@@ -38,7 +76,6 @@ export const projectData: Project[] = [
     description:
       "Aplicação Full-Stack para gerenciar assinaturas com foco em usabilidade e automações e controles financeiros.",
     tags: ["React", "Next.js", "Firebase", "Tailwind", "Framer Motion"],
-
     imageUrl: "/images/COFRE%20FORTE.png",
     links: [
       {
@@ -72,12 +109,11 @@ export const projectData: Project[] = [
       },
     ],
   },
-   {
+  {
     title: "BARREIRINHAS",
     description:
       "Centro de Comando ERP & E-Commerce Headless",
     tags: ["React", "Next.js", "Firebase", "Tailwind", "Framer Motion"],
-
     imageUrl: "/images/BARREIRINHAS.png",
     links: [
       {
@@ -95,7 +131,7 @@ export const projectData: Project[] = [
   {
     title: "ProjectHelix",
     description:
-      "API de alta performance desenvolvida com arquitetura em camadas, autenticação com JWT, SignalR  e integração com PostgreSQL.",
+      "API de alta performance desenvolvida com arquitetura em camadas, autenticação com JWT, SignalR e integração com PostgreSQL.",
     tags: [".NET 8", "C#", "ASP.NET Core", "PostgreSQL", "SignalR"],
     imageUrl: "/images/ProjectHelix.png",
     links: [
@@ -120,20 +156,6 @@ export type Certificate = {
 /** Dados dos certificados */
 export const certificatesData: Certificate[] = [
   {
-    title: "Unity 3D e Desenvolvimento de AR",
-    issuer: "PROAR Academy",
-    date: "Concluído 23/09/2025",
-    image: "/images/certs/UNITY.png",
-    link: "/images/pasts/UNITY.pdf",
-  },
-   {
-    title: "Engenheiro de Dados e DevOps",
-    issuer: "DataTech Academy",
-    date: "Concluído 23/09/2025",
-    image: "/images/certs/DEVOPS.png",
-    link: "/images/pasts/DEVOPS.pdf",
-  },
-  {
     title: "Desenvolvimento Mobile",
     issuer: "CEPEDI",
     date: "Concluído em Dezembro de 2024",
@@ -147,28 +169,14 @@ export const certificatesData: Certificate[] = [
     image: "/images/certs/BAH.IA.png",
     link: "/images/pasts/BAH.IA.pdf",
   },
-   {
-    title: "Desenvolvimento Backend C#/.NET",
-    issuer: "DEV ACADEMY",
-    date: "Concluído 19/02/2025",
-    image: "/images/certs/BACKEND.png",
-    link: "/images/pasts/BACKEND.pdf",
-  },
-     {
+  {
     title: "MINICURSOS SINFORM",
     issuer: "Sinform",
     date: "Concluído 2023/2025",
     image: "/images/certs/SINFORM.png",
     link: "/images/certs/SINFORM 2023-2025.pdf",
   },
-   {
-    title: "Suporte Profissional de MacBook",
-    issuer: "APPLE",
-    date: "Concluído 24/02/2021",
-    image: "/images/certs/APPLE.png",
-    link: "/images/pasts/APPLE.pdf",
-  },
-    {
+  {
     title: "Python AI Backend Developer",
     issuer: "DIO",
     date: "Concluído 25/06/2024",
@@ -188,12 +196,5 @@ export const certificatesData: Certificate[] = [
     date: "Concluído em Maio de 2024",
     image: "/images/certs/DIGITAL.png",
     link: "/images/pasts/digital.pdf",
-  },
-  {
-    title: "React JS",
-    issuer: "Rocketseat",
-    date: "Concluído 28/05/2021",
-    image: "/images/certs/REACT.png",
-    link: "/images/pasts/react.pdf",
   },
 ];
