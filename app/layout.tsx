@@ -11,32 +11,32 @@ import "./globals.css";
 const fontInter = localFont({
   src: [
     {
-      path: "../node_modules/@fontsource/inter/files/inter-latin-300-normal.woff2",
+      path: "../fonts/inter-latin-300-normal.woff2",
       weight: "300",
       style: "normal",
     },
     {
-      path: "../node_modules/@fontsource/inter/files/inter-latin-400-normal.woff2",
+      path: "../fonts/inter-latin-400-normal.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../node_modules/@fontsource/inter/files/inter-latin-500-normal.woff2",
+      path: "../fonts/inter-latin-500-normal.woff2",
       weight: "500",
       style: "normal",
     },
     {
-      path: "../node_modules/@fontsource/inter/files/inter-latin-600-normal.woff2",
+      path: "../fonts/inter-latin-600-normal.woff2",
       weight: "600",
       style: "normal",
     },
     {
-      path: "../node_modules/@fontsource/inter/files/inter-latin-700-normal.woff2",
+      path: "../fonts/inter-latin-700-normal.woff2",
       weight: "700",
       style: "normal",
     },
     {
-      path: "../node_modules/@fontsource/inter/files/inter-latin-800-normal.woff2",
+      path: "../fonts/inter-latin-800-normal.woff2",
       weight: "800",
       style: "normal",
     },
@@ -48,27 +48,27 @@ const fontInter = localFont({
 const fontOutfit = localFont({
   src: [
     {
-      path: "../node_modules/@fontsource/outfit/files/outfit-latin-300-normal.woff2",
+      path: "../fonts/outfit-latin-300-normal.woff2",
       weight: "300",
       style: "normal",
     },
     {
-      path: "../node_modules/@fontsource/outfit/files/outfit-latin-400-normal.woff2",
+      path: "../fonts/outfit-latin-400-normal.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../node_modules/@fontsource/outfit/files/outfit-latin-600-normal.woff2",
+      path: "../fonts/outfit-latin-600-normal.woff2",
       weight: "600",
       style: "normal",
     },
     {
-      path: "../node_modules/@fontsource/outfit/files/outfit-latin-700-normal.woff2",
+      path: "../fonts/outfit-latin-700-normal.woff2",
       weight: "700",
       style: "normal",
     },
     {
-      path: "../node_modules/@fontsource/outfit/files/outfit-latin-800-normal.woff2",
+      path: "../fonts/outfit-latin-800-normal.woff2",
       weight: "800",
       style: "normal",
     },
